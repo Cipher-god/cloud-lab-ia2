@@ -1,6 +1,5 @@
 ---
 title: "3 tier app tutorial"
-layout: gridlay
 sitemap: false
 permalink: /blog/
 ---
