@@ -8,7 +8,6 @@ url: "https://cipher-god.github.io/cloud-lab-ia2/"
 theme: jekyll-theme-minimal
 
 include:
-  - .htaccess
   - _pages
 
 sass:
