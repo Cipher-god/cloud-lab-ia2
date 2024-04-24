@@ -1,0 +1,18 @@
+# config.yml
+
+theme: jekyll-theme-cayman # Choose the theme you prefer
+permalink: /cloud-lab-ia2/:title/ # Customize permalink structure
+
+plugins:
+  - jekyll-relative-links # Required if you use relative links in your Markdown files
+
+defaults:
+  - scope:
+      path: "" # Set to the root directory
+      type: "pages"
+    values:
+      layout: "page" # Set the layout for all pages
+
+collections:
+  pages:
+    output: true # Enable output for pages collection
