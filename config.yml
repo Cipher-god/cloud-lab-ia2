@@ -1,18 +1,41 @@
-# config.yml
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-theme: jekyll-theme-cayman # Choose the theme you prefer
-permalink: /cloud-lab-ia2/:title/ # Customize permalink structure
+# Site settings
+title: Cloud IA 2
+email: 
+description: > # this means to ignore newlines until "baseurl:"
+  Web designing test template
+baseurl: "/cloud-lab-ia2"
+url: ""
+theme: jekyll-theme-minimal
 
-plugins:
-  - jekyll-relative-links # Required if you use relative links in your Markdown files
+include:
+  - .htaccess
+  - _pages
 
-defaults:
-  - scope:
-      path: "" # Set to the root directory
-      type: "pages"
-    values:
-      layout: "page" # Set the layout for all pages
+sass:
+  sass_dir: _sass
 
-collections:
-  pages:
-    output: true # Enable output for pages collection
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  parse_block_html: true # default for kramdown is false. This will enable using Markdown links
